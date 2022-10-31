@@ -22,8 +22,8 @@ const peliculas = [
 ]
 
 const nuevaLista = peliculas.filter(pelicula => pelicula.fecha > new Date(2010, 1, 1))
-const listaDirectores = peliculas.map(pelicula => {return pelicula.director} );
-const listaTitulos = peliculas.map(pelicula => {return pelicula.titulos} );
+const listaDirectores = peliculas.map(pelicula =>  pelicula.director );
+const listaTitulos = peliculas.map(pelicula => pelicula.titulos );
 
 const directorTitulos = directores.concat(listaTitulos);
 const directores = [...listaDirectores, ...listaTitulos];
